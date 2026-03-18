@@ -1,229 +1,154 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                     HERO SECTION                       -->
-<!-- ═══════════════════════════════════════════════════════ -->
+# Calculadora de Propina
 
-<h1>
-  💰 Calculadora de Propina
-</h1>
+**Aplicación móvil multiplataforma para el cálculo de propinas.**
 
-<p>
-  <strong>Aplicación móvil multiplataforma para calcular propinas de forma rápida, precisa y elegante.</strong><br/>
-  <em>Construida con React Native · Expo · TypeScript</em>
-</p>
+Built with React Native &middot; Expo &middot; TypeScript
 
 <br/>
 
-<!-- ─── Badges ────────────────────────────────────────── -->
-
-<p>
-  <a href="https://reactnative.dev/">
-    <img src="https://img.shields.io/badge/React_Native-0.81.5-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Native" />
-  </a>&nbsp;
-  <a href="https://expo.dev/">
-    <img src="https://img.shields.io/badge/Expo_SDK-54-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
-  </a>&nbsp;
-  <a href="https://www.typescriptlang.org/">
-    <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  </a>&nbsp;
-  <a href="#">
-    <img src="https://img.shields.io/badge/Plataformas-Android_·_iOS_·_Web-7C3AED?style=for-the-badge" alt="Platforms" />
-  </a>&nbsp;
-  <a href="#">
-    <img src="https://img.shields.io/badge/Versión-1.0.0-10B981?style=for-the-badge" alt="Version" />
-  </a>
-</p>
-
-<br/>
-
-<!-- ─── Separator ─────────────────────────────────────── -->
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
+[![React Native](https://img.shields.io/badge/React_Native-0.81.5-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo_SDK-54-000020?style=flat-square&logo=expo&logoColor=white)](https://expo.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Platform](https://img.shields.io/badge/Platform-Android_·_iOS_·_Web-6366F1?style=flat-square)]()
 
 </div>
 
-<br/>
+---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
-<details open>
-<summary><strong>Haz clic para navegar</strong></summary>
+- [Descripción General](#descripción-general)
+- [Características](#características)
+- [Stack Tecnológico](#stack-tecnológico)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Requisitos Previos](#requisitos-previos)
+- [Instalación](#instalación)
+- [Ejecución](#ejecución)
+- [Scripts Disponibles](#scripts-disponibles)
+- [Roadmap](#roadmap)
+- [Contribuciones](#contribuciones)
+- [Autor](#autor)
 
-&nbsp;
+---
 
-- [Acerca del Proyecto](#-acerca-del-proyecto)
-- [Características Principales](#-características-principales)
-- [Stack Tecnológico](#-stack-tecnológico)
-- [Arquitectura del Proyecto](#-arquitectura-del-proyecto)
-- [Requisitos Previos](#-requisitos-previos)
-- [Instalación](#-instalación)
-- [Ejecución](#-ejecución)
-- [Scripts Disponibles](#-scripts-disponibles)
-- [Roadmap](#-roadmap)
-- [Contribuciones](#-contribuciones)
-- [Autor](#-autor)
+## Descripción General
 
-</details>
+Calculadora de Propina es una aplicación móvil diseñada para resolver de forma rápida y precisa el cálculo de propinas en restaurantes, cafeterías o cualquier establecimiento de servicios.
 
-<br/>
+El usuario ingresa el monto total de su cuenta, selecciona un porcentaje de propina predefinido (10%, 15% o 20%) y obtiene de forma instantánea tanto el valor de la propina como el total final a pagar.
 
-## 🧠 Acerca del Proyecto
+El proyecto está desarrollado siguiendo principios de **arquitectura limpia**, **tipado estricto** y **componentización reutilizable**, demostrando buenas prácticas de ingeniería de software en el ecosistema React Native.
 
-> **Calculadora de Propina** nace como una solución elegante y funcional al cálculo de propinas en restaurantes, cafeterías y servicios. Desarrollada bajo estándares profesionales de ingeniería de software, la aplicación demuestra buenas prácticas de componentización, tipado estricto y separación de responsabilidades.
+---
 
-### ¿Qué problema resuelve?
+## Características
 
-Calcular mentalmente una propina justa puede ser confuso, especialmente con montos irregulares. Esta aplicación permite al usuario:
+| Característica | Descripción |
+|:---|:---|
+| **Cálculo en tiempo real** | Los resultados se actualizan instantáneamente al modificar el monto o cambiar el porcentaje de propina. |
+| **Validación de entrada** | Sanitización automática de caracteres no numéricos, manejo de decimales duplicados y estados deshabilitados. |
+| **Interfaz moderna** | Diseño con tarjetas elevadas, bordes redondeados y paleta de colores profesional (azul/verde). |
+| **Arquitectura modular** | Separación estricta entre componentes, pantallas, estilos y funciones de utilidad. |
+| **Tipado completo** | TypeScript con interfaces explícitas, genéricos y funciones puras tipadas. |
+| **Multiplataforma** | Una única base de código que compila nativamente para Android, iOS y Web. |
 
-1. **Ingresar** el monto total de su cuenta.
-2. **Seleccionar** un porcentaje de propina (10%, 15% o 20%).
-3. **Visualizar** instantáneamente la propina calculada y el total final a pagar.
+---
 
-<br/>
+## Stack Tecnológico
 
-## ✨ Características Principales
-
-<table>
-  <tr>
-    <td width="80" align="center">⚡</td>
-    <td><strong>Cálculo en Tiempo Real</strong><br/>Los resultados se actualizan instantáneamente al escribir el monto o cambiar el porcentaje.</td>
-  </tr>
-  <tr>
-    <td align="center">🎨</td>
-    <td><strong>Diseño UI Moderno</strong><br/>Interfaz con tarjetas elevadas, esquinas redondeadas, degradados suaves y paleta de colores azul/verde profesional.</td>
-  </tr>
-  <tr>
-    <td align="center">🛡️</td>
-    <td><strong>Validación Inteligente</strong><br/>Sanitización de entrada numérica, prevención de caracteres inválidos y manejo de estados deshabilitados.</td>
-  </tr>
-  <tr>
-    <td align="center">📐</td>
-    <td><strong>Arquitectura Limpia</strong><br/>Separación estricta de componentes, pantallas, estilos y utilidades en módulos independientes.</td>
-  </tr>
-  <tr>
-    <td align="center">🔒</td>
-    <td><strong>TypeScript Estricto</strong><br/>Tipado completo con interfaces Props, genéricos y funciones puras tipadas para máxima seguridad.</td>
-  </tr>
-  <tr>
-    <td align="center">📱</td>
-    <td><strong>Multiplataforma</strong><br/>Una sola base de código que compila nativamente para Android, iOS y Web.</td>
-  </tr>
-</table>
-
-<br/>
-
-## 🛠 Stack Tecnológico
-
-<div align="center">
-
-| Capa | Tecnología | Versión | Propósito |
-|:---:|:---|:---:|:---|
-| 🏗️ | **React Native** | `0.81.5` | Framework de UI con componentes nativos |
-| 📦 | **Expo SDK** | `54` | Toolchain de desarrollo, bundling y despliegue |
-| 🔷 | **TypeScript** | `5.9` | Superset tipado para JavaScript |
-| ⚛️ | **React** | `19.1` | Librería de renderizado declarativo |
-| 📊 | **Expo Status Bar** | `3.0` | Control de la barra de estado nativa |
-
-</div>
-
-<br/>
-
-## 🏗 Arquitectura del Proyecto
-
-```
-📦 calculadora-propina
-│
-├── 📄 App.tsx                          # Componente raíz → renderiza TipCalculatorScreen
-├── 📄 index.ts                         # Entry point registrado con Expo
-├── 📄 app.json                         # Manifiesto de configuración de Expo
-├── 📄 tsconfig.json                    # Configuración del compilador TypeScript
-├── 📄 package.json                     # Dependencias y scripts de npm
-│
-├── 📂 src/                             # ─── Código fuente principal ───
-│   │
-│   ├── 📂 screens/                     # Pantallas completas de la app
-│   │   └── 📄 TipCalculatorScreen.tsx  # Vista principal: input + botones + resultados
-│   │
-│   ├── 📂 components/                  # Componentes reutilizables de UI
-│   │   └── 📄 TipButton.tsx            # Botón de selección de porcentaje de propina
-│   │
-│   ├── 📂 styles/                      # Hojas de estilo centralizadas
-│   │   └── 📄 tipCalculator.styles.ts  # StyleSheet con diseño moderno (cards, shadows, colors)
-│   │
-│   └── 📂 utils/                       # Funciones puras de utilidad
-│       └── 📄 tip.utils.ts             # sanitizeAmountInput, calculateTip, formatCurrency...
-│
-└── 📂 assets/                          # Recursos estáticos
-    ├── 📄 icon.png                     # Ícono principal de la app
-    ├── 📄 splash-icon.png              # Imagen del splash screen
-    ├── 📄 favicon.png                  # Favicon para versión web
-    └── 📄 android-icon-*.png           # Íconos adaptativos de Android
-```
-
-<br/>
-
-## 📌 Requisitos Previos
-
-Antes de iniciar, asegúrate de contar con las siguientes herramientas instaladas:
-
-| Herramienta | Versión Mínima | Enlace |
+| Tecnología | Versión | Propósito |
 |:---|:---:|:---|
-| **Node.js** | `18.x LTS` | [nodejs.org](https://nodejs.org/) |
-| **npm** | `9.x` | Incluido con Node.js |
-| **Git** | `2.x` | [git-scm.com](https://git-scm.com/) |
-| **Expo Go** *(móvil)* | Última | [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) · [iOS](https://apps.apple.com/app/expo-go/id982107779) |
+| React Native | `0.81.5` | Framework de UI con componentes nativos |
+| Expo SDK | `54` | Toolchain de desarrollo, bundling y despliegue |
+| TypeScript | `5.9` | Superset tipado de JavaScript |
+| React | `19.1` | Librería de renderizado declarativo |
+| Expo Status Bar | `3.0` | Control programático de la barra de estado |
 
-> [!NOTE]
-> Para ejecutar en emulador Android necesitas [Android Studio](https://developer.android.com/studio) configurado.
-> Para simulador iOS necesitas macOS con [Xcode](https://developer.apple.com/xcode/).
+---
 
-<br/>
+## Estructura del Proyecto
 
-## 📥 Instalación
+```
+calculadora-propina/
+├── App.tsx                             # Componente raíz de la aplicación
+├── index.ts                            # Entry point registrado con Expo
+├── app.json                            # Manifiesto de configuración de Expo
+├── tsconfig.json                       # Configuración del compilador TypeScript
+├── package.json                        # Dependencias y scripts npm
+│
+├── src/
+│   ├── screens/
+│   │   └── TipCalculatorScreen.tsx     # Pantalla principal (input, botones, resultados)
+│   │
+│   ├── components/
+│   │   └── TipButton.tsx               # Componente de selección de porcentaje
+│   │
+│   ├── styles/
+│   │   └── tipCalculator.styles.ts     # StyleSheet centralizado (cards, shadows, colors)
+│   │
+│   └── utils/
+│       └── tip.utils.ts                # Funciones puras: sanitize, calculate, format
+│
+└── assets/                             # Recursos estáticos (íconos, splash screen)
+```
+
+---
+
+## Requisitos Previos
+
+| Herramienta | Versión Mínima | Referencia |
+|:---|:---:|:---|
+| Node.js | `18.x LTS` | [nodejs.org](https://nodejs.org/) |
+| npm | `9.x` | Incluido con Node.js |
+| Git | `2.x` | [git-scm.com](https://git-scm.com/) |
+| Expo Go (móvil) | Última | [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779) |
+
+> **Nota:** Para emulador Android se requiere [Android Studio](https://developer.android.com/studio). Para simulador iOS se requiere macOS con [Xcode](https://developer.apple.com/xcode/).
+
+---
+
+## Instalación
 
 ```bash
-# 1️⃣  Clona el repositorio
+# Clonar el repositorio
 git clone https://github.com/davidsandovalm/calculadora-propina.git
 
-# 2️⃣  Accede al directorio del proyecto
+# Acceder al directorio del proyecto
 cd calculadora-propina
 
-# 3️⃣  Instala todas las dependencias
+# Instalar dependencias
 npm install
 ```
 
-> [!TIP]
-> Si experimentas problemas con las dependencias, ejecuta `npm install --legacy-peer-deps` como alternativa.
-
-<br/>
-
-## ▶️ Ejecución
+Si hay conflictos de dependencias, utilizar:
 
 ```bash
-# Inicia el servidor de desarrollo (Metro Bundler)
+npm install --legacy-peer-deps
+```
+
+---
+
+## Ejecución
+
+```bash
+# Iniciar el servidor de desarrollo (Metro Bundler)
 npx expo start
 ```
 
-Una vez iniciado el servidor, verás un código QR y un menú interactivo en tu terminal:
-
-<div align="center">
+Una vez iniciado, utilizar las siguientes opciones desde la terminal:
 
 | Tecla | Acción | Requisito |
 |:---:|:---|:---|
-| `a` | Abrir en emulador **Android** | Android Studio con emulador activo |
-| `i` | Abrir en simulador **iOS** | macOS con Xcode instalado |
-| `w` | Abrir en **navegador web** | Navegador moderno |
-| 📷 | Escanear **QR** con Expo Go | Dispositivo físico con Expo Go |
+| `a` | Abrir en emulador Android | Android Studio con emulador activo |
+| `i` | Abrir en simulador iOS | macOS con Xcode instalado |
+| `w` | Abrir en navegador web | Navegador moderno |
+| QR | Escanear con Expo Go | Dispositivo en la misma red Wi-Fi |
 
-</div>
+---
 
-> [!IMPORTANT]
-> Para usar tu teléfono físico, asegúrate de que esté conectado a la **misma red Wi-Fi** que tu computadora.
-
-<br/>
-
-## 📜 Scripts Disponibles
+## Scripts Disponibles
 
 | Comando | Descripción |
 |:---|:---|
@@ -232,63 +157,49 @@ Una vez iniciado el servidor, verás un código QR y un menú interactivo en tu 
 | `npm run ios` | Compila y ejecuta en iOS |
 | `npm run web` | Ejecuta la versión web |
 
-<br/>
+---
 
-## 🗺 Roadmap
-
-Funcionalidades planeadas para futuras versiones:
+## Roadmap
 
 - [x] Cálculo de propina con porcentajes predefinidos (10%, 15%, 20%)
 - [x] Validación y sanitización de entrada numérica
-- [x] Diseño responsivo con tarjetas y sombras
-- [ ] 🌙 Modo Oscuro (Dark Mode)
-- [ ] 👥 División de cuenta entre varias personas
-- [ ] 💫 Animaciones con React Native Reanimated
-- [ ] 📊 Historial de cálculos recientes
-- [ ] 🎚️ Porcentaje de propina personalizado con slider
+- [x] Diseño responsivo con sistema de tarjetas
+- [ ] Modo oscuro (Dark Mode)
+- [ ] División de cuenta entre múltiples personas
+- [ ] Animaciones con React Native Reanimated
+- [ ] Historial de cálculos recientes
+- [ ] Porcentaje de propina personalizado (slider)
 
-<br/>
+---
 
-## 🤝 Contribuciones
-
-Las contribuciones son lo que hacen a la comunidad open source un lugar increíble. ¡Cualquier contribución es **enormemente apreciada**!
+## Contribuciones
 
 ```bash
-# 1. Fork del proyecto
-# 2. Crea tu rama de feature
-git checkout -b feature/MiNuevaCaracteristica
+# 1. Fork del repositorio
+# 2. Crear rama de feature
+git checkout -b feature/nueva-caracteristica
 
-# 3. Commit de tus cambios
+# 3. Commit de cambios
 git commit -m "feat: agregar nueva característica"
 
 # 4. Push a la rama
-git push origin feature/MiNuevaCaracteristica
+git push origin feature/nueva-caracteristica
 
-# 5. Abre un Pull Request
+# 5. Abrir Pull Request en GitHub
 ```
 
-¿Encontraste un bug? → [Abre un Issue](https://github.com/davidsandovalm/calculadora-propina/issues)
+Para reportar errores: [abrir un Issue](https://github.com/davidsandovalm/calculadora-propina/issues).
 
-<br/>
+---
 
-## 👤 Autor
+## Autor
 
-<div align="center">
+**David Sandoval M** · [github.com/davidsandovalm](https://github.com/davidsandovalm)
 
-| | |
-|:---:|:---|
-| 👨‍💻 | **David Sandoval M** |
-| 🔗 | [github.com/davidsandovalm](https://github.com/davidsandovalm) |
-| 📚 | Desarrollo de Aplicaciones Multidispositivo II |
-
-</div>
-
-<br/>
+Proyecto desarrollado para el curso **Desarrollo de Aplicaciones Multidispositivo II**.
 
 ---
 
 <div align="center">
-  <sub>⭐ Si este proyecto te resultó útil, considera darle una estrella en GitHub.</sub>
-  <br/><br/>
-  <img src="https://img.shields.io/badge/Hecho_con-❤️_y_TypeScript-3178C6?style=for-the-badge" alt="Made with love" />
+  <sub>Si este proyecto te resultó útil, considera darle una estrella en GitHub.</sub>
 </div>
