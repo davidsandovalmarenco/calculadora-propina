@@ -1,88 +1,155 @@
-# Calculadora de Propina 💰
+<div align="center">
+  <img src="https://raw.githubusercontent.com/expo/expo/main/docs/public/static/images/expo-go-logo.png" alt="Expo Logo" width="100" />
+  <h1>💰 Calculadora de Propina Pro</h1>
+  <p><strong>Calcula propinas de manera rápida, precisa y con una experiencia móvil de primer nivel.</strong></p>
+  
+  <p>
+    <img alt="React Native" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img alt="Expo" src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" />
+    <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img alt="Version" src="https://img.shields.io/badge/Versión-1.0.0-success?style=for-the-badge" />
+    <img alt="License" src="https://img.shields.io/badge/Licencia-MIT-blue?style=for-the-badge" />
+  </p>
+</div>
 
-Una aplicación móvil desarrollada con **React Native** y **Expo** para calcular de manera rápida y sencilla las propinas de tus consumos. Adicionalmente de ser multiplataforma, cuenta con una base de código robusta utilizando **TypeScript**.
+---
 
-## 🚀 Características
+## 📖 Tabla de Contenidos
 
-- Interfaz de usuario intuitiva y moderna.
-- Cálculo automático de la propina y el total a pagar basándose en el porcentaje seleccionado.
-- Desarrollada con TypeScript para mayor escalabilidad y prevención de errores.
-- Compatible con Android, iOS y Web (gracias a Expo).
+- [Acerca del Proyecto](#-acerca-del-proyecto)
+- [Características Principales](#-características-principales)
+- [Arquitectura de UI/UX](#-arquitectura-de-uiux)
+- [Tecnologías Utilizadas](#️-tecnologías-utilizadas)
+- [Guía de Instalación y Ejecución](#-guía-de-instalación-y-ejecución)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Próximos Pasos (Roadmap)](#-próximos-pasos-roadmap)
+- [Contribuciones](#-contribuciones)
 
-## 📋 Requisitos Previos
+---
 
-Antes de comenzar, asegúrate de tener instalado lo siguiente en tu entorno de desarrollo:
+## 🚀 Acerca del Proyecto
 
-- [Node.js](https://nodejs.org/es/) (se recomienda la versión LTS)
-- [npm](https://www.npmjs.com/) (normalmente se instala junto a Node.js)
-- Aplicación **Expo Go** en tu dispositivo móvil ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/us/app/expo-go/id982107779)), o un emulador previamente configurado en tu PC (Android Studio / Xcode).
+La **Calculadora de Propina** es una aplicación multiplataforma construida para facilitar el cálculo rápido de propinas en restaurantes, bares o cualquier servicio. Diseñada con un enfoque centrado en el usuario, ofrece una experiencia fluida, reactiva y visualmente atractiva utilizando los más altos estándares de desarrollo móvil en el ecosistema de React y Expo.
 
-## 🛠️ Instalación y Configuración
+## ✨ Características Principales
 
-Sigue estos pasos para clonar el proyecto y prepararlo en tu máquina local:
+*   **Cálculo Instantáneo:** Resultados en tiempo real con precisión decimal a medida que se ingresan los valores.
+*   **Gestión de Porcentajes:** Interfaz de un solo toque para seleccionar propinas recomendadas (10%, 15%, 20%) de forma dinámica.
+*   **Arquitectura Escalable:** Componentes desacoplados (como `TipButton`) y altamente reutilizables.
+*   **Tipado Estricto:** Código completamente robusto desarrollado en **TypeScript** para evitar errores en tiempo de ejecución.
+*   **Multiplataforma:** Soporte nativo y simultáneo para iOS, Android y compatibilidad con web desde una única base de código.
 
-1. **Clonar el repositorio**
-   Abre tu terminal y ejecuta:
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd calculadora-propina
-   ```
-   *(Nota: Si ya clonaste el proyecto, simplemente asegúrate de estar dentro de la carpeta `calculadora-propina`)*.
+## 📱 Arquitectura de UI/UX
 
-2. **Instalar dependencias**
-   Instala todos los paquetes y módulos necesarios para que el proyecto funcione:
-   ```bash
-   npm install
-   ```
+*(Añade capturas de pantalla de la interfaz de tu aplicación debajo de esta sección reemplazando los enlaces de las imágenes de ejemplo)*
 
-## ▶️ Cómo Ejecutar la Aplicación
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><strong>Vista Principal (Simulador)</strong></td>
+      <td align="center"><strong>Cálculo Realizado</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://via.placeholder.com/250x500.png?text=Main+Screen" alt="Principal" width="250"/></td>
+      <td><img src="https://via.placeholder.com/250x500.png?text=Results+Screen" alt="Resultados" width="250"/></td>
+    </tr>
+  </table>
+</div>
 
-Una vez finalizada la instalación de las dependencias, levanta el servidor de desarrollo de Expo ejecutando:
+## 🛠️ Tecnologías Utilizadas
+
+| Tecnología | Rol en el Proyecto | Justificación Arquitectónica |
+| :--- | :--- | :--- |
+| **React Native** | Framework Base | Permite compilar componentes nativos reales (View, Text) con sintaxis declarativa. |
+| **Expo SDK** | Plataforma In-App | Acelera enormemente el desarrollo, configuración de compilación nativa y *Hot Reloading*. |
+| **TypeScript** | Lenguaje | Asegura contratos e interfaces de datos fuertes y escalabilidad de los componentes. |
+| **Node.js & npm** | Entorno de Server | Permite ejecutar el *Metro Bundler* y realizar la gestión de todas las dependencias locales. |
+
+---
+
+## ⚙️ Guía de Instalación y Ejecución
+
+Sigue estos pasos precisos para configurar tu entorno de desarrollo y levantar los servicios en tu máquina local.
+
+### 1. Prerrequisitos del Entorno Local
+
+Antes de clonar, asegúrate de tener instalados los siguientes componentes:
+*   [Node.js](https://nodejs.org/es) (Se requiere versión LTS v18.x en adelante).
+*   [Git](https://git-scm.com/) (Para control de versiones).
+*   Un dispositivo físico con [Expo Go](https://expo.dev/client) instalado o un emulador configurado en tu PC (Android Studio o Xcode).
+
+### 2. Clonación e Instalación de Paquetes
+
+Clona este repositorio utilizando tu terminal e instala de forma limpia las dependencias de la aplicación:
 
 ```bash
-npm start
+# 1. Clonar el repositorio desde GitHub
+git clone https://github.com/davidsandovalm/calculadora-propina.git
+
+# 2. Navegar al directorio raíz del proyecto
+cd calculadora-propina
+
+# 3. Instalar las dependencias del proyecto de Expo
+npm install
 ```
-*(Alternativamente, puedes usar `npx expo start` o los scripts específicos del `package.json` como `npm run android`, `npm run ios`)*.
 
-Este comando iniciará el *Metro Bundler* y te mostrará un código QR en la terminal.
+### 3. Ejecución del Servidor de Desarrollo (Metro Bundler)
 
-### Opciones de visualización:
+Inicia el entorno de desarrollo y el empacatador ejecutando:
 
-- 📱 **Dispositivo Físico:** Abre la app **Expo Go** en tu teléfono y escanea el código QR que se muestra en la terminal.
-- 🤖 **Emulador Android:** Teniendo un emulador en ejecución, presiona la tecla `a` en la terminal donde se está ejecutando Expo.
-- 🍏 **Simulador iOS:** Si estás en macOS, presiona la tecla `i` en tu terminal para abrir la app en el simulador de iPhone.
-- 🌐 **Navegador Web:** Presiona la tecla `w` para ejecutar una versión web de la aplicación.
+```bash
+npx expo start
+```
 
-## 📁 Estructura Principal del Proyecto
+En la terminal aparecerán varias opciones. Puedes interactuar directamente con tu teclado en la terminal del Metro Bundler:
+*   🔑 Presiona `A` - Para instalar e iniciar en el emulador de **Android** abierto en tu PC.
+*   🔑 Presiona `I` - Para instalar e iniciar en el simulador de **iOS** (Solo disponible en macOS).
+*   🔑 Presiona `W` - Para desplegar la versión de **Web** en tu navegador.
+*   📱 **Dispositivo Físico:** Escanea el código QR mostrado en la terminal utilizando la cámara de tu iPhone (app Expo GO) o desde la app Expo GO en tu Android.
 
-Una visión general de los archivos y carpetas más importantes en el proyecto:
+---
+
+## 📁 Estructura del Código
+
+Para mantener un proyecto escalable, la arquitectura se divide separando la lógica y UI en la carpeta `src/`.
 
 ```text
-calculadora-propina/
-├── App.tsx             # Punto de entrada de la aplicación
-├── app.json            # Configuración de Expo (nombre, íconos, splash screen)
-├── package.json        # Declaración de dependencias y scripts
-├── src/                # Código fuente de componentes y lógica
-│   ├── components/     # Componentes de UI reutilizables (como TipButton)
-│   ├── screens/        # Vistas completas de la aplicación
-│   └── styles/         # Definición de estilos de la aplicación
-└── assets/             # Imágenes estáticas e íconos de la app
+📦 calculadora-propina
+ ┣ 📂 assets/              # Recursos multimedia de Expo (splash screen, adaptive icons, favicon)
+ ┣ 📂 src/                 # 🧠 Core lógico y vistas personalizadas
+ ┃ ┣ 📂 components/        # Componentes UI encapsulados de presentación (ej. TipButton.tsx)
+ ┃ ┣ 📂 screens/           # Pantallas principales y orquestadoras (ej. TipCalculatorScreen.tsx)
+ ┃ ┗ 📂 styles/            # Sistema centralizado con StyleSheet para mantener DRY en hojas de estilo
+ ┣ 📜 App.tsx              # Componente raíz de la app e importación inicial
+ ┣ 📜 app.json             # Manifiesto de metadatos de Expo (App name, version, identifiers)
+ ┣ 📜 package.json         # Registro estricto de librerías de terceros y comandos npm
+ ┗ 📜 tsconfig.json        # Directivas de configuración del transpilador oficial de TypeScript
 ```
 
-## 👨‍💻 Tecnologías Utilizadas
+---
 
-- **React Native** - Framework de UI
-- **Expo** - Plataforma de desarrollo para React Native
-- **TypeScript** - Superconjunto de JavaScript de tipado estático
+## 📈 Próximos Pasos (Roadmap)
+
+Lista de futuras actualizaciones planificadas:
+- [ ] Integrar soporte de "Dark Mode" para ajustarse al sistema nativo.
+- [ ] Añadir campo para la cantidad de personas (Split bill by person).
+- [ ] Aplicar animaciones utilizando React Native Reanimated.
+
+---
 
 ## 🤝 Contribuciones
 
-Si deseas mejorar la aplicación, realizar correcciones de errores o sugerir nuevas funcionalidades:
-1. Haz un *Fork* del proyecto.
-2. Crea una rama para tu feature (`git checkout -b feature/NuevaCaracteristica`).
-3. Haz *commit* a tus cambios (`git commit -m 'feat: Añadir nueva característica'`).
-4. Sube los cambios a la rama (`git push origin feature/NuevaCaracteristica`).
-5. Abre un *Pull Request*.
+Si en el futuro deseas colaborar, las propuestas y Pull Requests son totalmente bienvenidos:
 
----
-Desarrollado con ❤️ para organizar mejor los gastos diarios.
+1. Haz un **Fork** de este proyecto.
+2. Crea tu rama descriptiva de características: `git checkout -b feature/NuevaCaracteristica`
+3. Almacena tus cambios en un commit: `git commit -m 'feat: Añadir nueva característica al botón propina'`
+4. Envía la rama al repositorio: `git push origin feature/NuevaCaracteristica`
+5. Abre un **Pull Request**.
+
+Si encuentras algún error o tienes retroalimentación de código, por favor [abre un Issue](https://github.com/davidsandovalm/calculadora-propina/issues) en la pestaña correspondiente.
+
+<br />
+<div align="center">
+  <sub>Desarrollado y estructurado con altos estándares de desarrollo de software para el curso <strong>Desarrollo de Aplicaciones Multidispositivo II</strong>.</sub>
+</div>
