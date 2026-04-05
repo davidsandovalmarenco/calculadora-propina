@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "calculadora-propina",
+    "name": "Calculadora de Propina",
     "slug": "calculadora-propina",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,15 +16,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#ffffff"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.piero2011.calculadorapropina"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "068000ad-2dcf-4fb8-92ef-d717c5ba76ce"
+      }
     }
   }
 }
